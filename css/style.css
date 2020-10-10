@@ -1,0 +1,217 @@
+@import url("../css/fonts.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background:#ccc; */
+}
+
+
+/* ---------variables---------- */
+:root{
+
+    /* ---colors---- */
+    --text-grey:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+/* -----------garadient---- */
+--sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+/* ---font-family------ */
+
+--Abel:'Abel',cursive;
+--Anton:'Anton',cursive;
+--Josfin:'Josfin',cursive;
+--Lexend:'Lexend',cursive;
+--Livvic:'Livic',cursive;
+
+}
+
+/* nav-bar */
+.nav-bar{
+    width: 100%;
+    padding: 0 2;
+    height: 0rem;
+    min-height: 10vh;
+    background-color: #fff;
+    justify-content: space-between;
+    color:var(--text-grey);
+    overflow: hidden;
+   
+    
+}
+
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blooger-icon{
+    background-color: #fff;
+    padding: 1.6rem 6rem;
+    display: block;
+    
+}
+
+.blooger-text{
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: #fff;
+    font-family: var(--Lexend);
+    color:var(--text-grey);
+    position: absolute;
+}
+
+.toggle{
+    width: 92%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: none;
+    
+
+}
+.toggle .menu-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding:2rem 0;
+    
+
+}
+
+.toggle .menu-icon i{
+    font-size: 1.4rem;
+    color: var(--text-grey);
+}
+.collapse{
+    height: 40rem;
+}
+
+
+nav{
+    width: 100%;
+    
+}
+
+nav ul{
+    display: flex;   
+    
+}
+
+.nav-links nav ul li{
+    padding: 1.6rem 1rem;
+    
+}
+.nav-links nav ul li:hover{
+    background-color: var(--midnight);
+    
+}
+.nav-links nav ul li a{
+    text-decoration: none;
+    font-size : 1.1rem;
+    position: relative;
+    color: #3f4954;
+    font-family: var(--Abel);
+    
+}
+.nav-links nav ul li:hover a{
+    color: var(--white);
+}
+
+.social-menu{
+    padding:1.6rem 1rem;
+    /* overflow: hidden; */
+}
+
+.social-menu .social-menu-list a{
+    text-decoration: none;
+    color:var(--text-grey);
+}
+.social-menu .social-menu-list a i{
+    padding: 2px;
+}
+.social-menu .social-menu-list a i:hover{
+    color: #a1c4fd;
+}
+
+/* ----x------navbar---------x */
+
+/* -----landing-page--------- */
+.landing-page{
+    background: url(../images/Background-image.png) ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.landing-page .wallapaper{
+    padding-top:10rem;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--Lexend);
+    margin-left: -4.7rem;
+    
+}
+
+
+.landing-page .wallapaper button{
+    padding: 1rem 3rem;
+    border-radius: 1.3rem;
+    width: 9rem;
+    margin-top: 2rem;
+    background:#a1c4fd ;
+    border: 1px solid var(--white);
+    outline: none;
+    cursor: pointer;
+    
+}
+.landing-page .wallapaper button:hover{
+    background: transparent;
+    color: var(--white);
+
+}
+
+.landing-page .wallapaper h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+
+}
+.landing-page .wallapaper h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+/* --x---landing-page--x------- */
+
+
+
+
+
+
+
+/* ---mediaquaries------ */
+
+@media only screen and (max-width:750px){
+    .nav-bar,.nav-links nav ul{
+        flex-flow: column ;
+
+    }
+    .toggle{
+        display: initial;
+    }
+   
+}
