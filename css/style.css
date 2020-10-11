@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
     /* background:#ccc; */
 }
 
@@ -41,7 +41,6 @@
     justify-content: space-between;
     color:var(--text-grey);
     overflow: hidden;
-   
     
 }
 
@@ -89,7 +88,7 @@
     color: var(--text-grey);
 }
 .collapse{
-    height: 40rem;
+    min-height: 34rem;
 }
 
 
@@ -100,6 +99,7 @@ nav{
 
 nav ul{
     display: flex;   
+    list-style: none;
     
 }
 
@@ -125,7 +125,6 @@ nav ul{
 
 .social-menu{
     padding:1.6rem 1rem;
-    /* overflow: hidden; */
 }
 
 .social-menu .social-menu-list a{
@@ -145,7 +144,7 @@ nav ul{
 .landing-page{
     background: url(../images/Background-image.png) ;
     background-size: cover;
-    height: 100vh;
+    height: 111vh;
     display: flex;
     justify-content: center;
     
@@ -155,9 +154,7 @@ nav ul{
     padding-top:10rem;
     text-align: center;
     color: var(--white);
-    font-family: var(--Lexend);
-    margin-left: -4.7rem;
-    
+    font-family: var(--Lexend); 
 }
 
 
@@ -166,10 +163,10 @@ nav ul{
     border-radius: 1.3rem;
     width: 9rem;
     margin-top: 2rem;
-    background:#a1c4fd ;
     border: 1px solid var(--white);
     outline: none;
     cursor: pointer;
+    font-size: 1rem;
     
 }
 .landing-page .wallapaper button:hover{
@@ -197,7 +194,88 @@ nav ul{
 
 /* --x---landing-page--x------- */
 
+/* ------courcel-post----------- */
+.slider{
+    background: url('../images/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right ;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
 
+.container{
+    margin: 0 5vw;
+}
+
+.posts{
+    padding-top: 6rem;
+}
+.post-content{
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    flex-direction: column;
+    scroll-behavior: auto;
+}
+.post-title{
+    padding: 2rem;
+}
+.post-title h3{
+    font-family: var(--Lexend);
+    font-size: 1.2rem;
+}
+
+.btn{
+    
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background: var(--sky);
+    margin: .5rem;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background:#a1c4fd;
+}
+
+.post-title span{
+    display: block;
+    font-family: var(--Abel);
+
+}
+
+/* -------post-navigation-menu----- */
+.owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+.owl-nav .owl-prev .prev-btn,
+.owl-nav .owl-next .next-btn{
+    font-size: 2rem;
+    outline: none;
+
+}
+
+.owl-theme .owl-nav [class*="owl-"]{
+    outline: none;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    background:transparent;
+    color: #a1c4fd;
+}
+
+/* ---x----post-navigation-menu---x---- */
+
+/* ----x--courcel-post-------x---- */
 
 
 
@@ -213,5 +291,4 @@ nav ul{
     .toggle{
         display: initial;
     }
-   
 }

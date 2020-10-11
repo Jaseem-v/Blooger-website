@@ -1,3 +1,6 @@
+// toggle menu--------
+
+
 $(document).ready(function(){
     $nav=$('.nav-bar');
     $toggle=$('.toggle');
@@ -9,13 +12,14 @@ $(document).ready(function(){
 });
 
 
+// owl-courcel----------
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    dots:false,
+    nav:true,
+    navText:[$('.prev-btn'),$('.next-btn')]
 
-
-// $(document).ready(function(){
-
-//     $(".nav-bar").on("click",function(){
-//         $(".toggle").toggleClass("open");
-//     });
-
-// });
+});
