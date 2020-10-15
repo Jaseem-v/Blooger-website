@@ -664,6 +664,9 @@ footer .container{
     footer .container{
         grid-template-columns: 1fr;
     }
+    nav{
+        padding-top:4rem;
+    }
 }
 
 
