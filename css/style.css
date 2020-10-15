@@ -686,7 +686,7 @@ footer .container{
 
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:520px){
 .blooger-icon{
     padding: 1rem 6rem;
 }
