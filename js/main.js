@@ -1,3 +1,10 @@
+// loader
+$(window).on("load",function(){
+	$(".loader-wrapper").fadeOut("slow");
+  });
+
+
+
 
 const responsive ={
     0:{items:1},
